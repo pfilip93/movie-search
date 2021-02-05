@@ -11,7 +11,7 @@ function App() {
 
   async function fetchData() {
     const res = await fetch(
-      `http://www.omdbapi.com/?apikey=20d04afb&s=${phrase}`
+      `https://www.omdbapi.com/?apikey=20d04afb&s=${phrase}`
     );
     const data = await res.json();
     return data;
